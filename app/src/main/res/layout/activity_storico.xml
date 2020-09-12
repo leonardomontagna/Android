@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ListView
+        android:id="@+id/storico"
+        android:layout_width="fill_parent"
+        android:layout_height="309dp"
+        android:background="#ffffff"></ListView>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="5px"
+        android:background="#ffffff">
+
+        <RadioButton
+            android:id="@+id/rb_attive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="getAttive"
+            android:text="attive" />
+
+        <RadioButton
+            android:id="@+id/rb_effettuate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="getEffettuate"
+            android:text="effettuate" />
+
+        <RadioButton
+            android:id="@+id/rb_disdette"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="getDisdette"
+            android:text="disdette" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/btn_effettuata"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:drawableLeft="@drawable/done_all"
+            android:text="Effettuata" />
+
+        <Button
+            android:id="@+id/btn_disdetta"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/delete"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:text="Disdici" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
